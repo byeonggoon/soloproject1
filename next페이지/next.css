@@ -1,0 +1,431 @@
+
+*{
+    margin: 0;
+}
+
+body {
+    padding-top:80px ;
+}
+
+#top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    /* border: 15px rgb(238, 7, 7);*/
+    z-index: 100;  
+    background: linear-gradient(to top, rgb(255, 247, 247), white);
+}
+
+.top-inner {
+    /* margin: 23px 0 0 23px; */
+    display: grid;
+    grid-template-columns: auto  auto auto;
+    justify-content: space-between;
+    
+    
+}
+
+.logo-top {
+    color:rgb(255, 56, 92);
+    font-size: 35px;
+    /* font-weight: 8000; */
+    margin: 23px 0 0 23px;
+}
+
+.logo-top a{
+    color:rgb(255, 56, 92) ;
+}
+
+
+.bigicon{
+    width: 30px;
+    height: 30px;
+    /* color: black;
+    background-color: black; */
+}
+
+.search-bar{
+    margin: 20px 0 0 100px ;
+    border: rgb(212, 212, 212) solid 1px;
+    padding: 10px 25px 10px 10px;
+    border-radius: 45px;
+    
+}
+.search-bar ul{
+    display:grid ;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    list-style-type: none;
+    
+}
+
+.search-bar ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800 ;
+}
+
+.search-icon{
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(255, 56, 92);
+    padding: 13px;
+    margin-top: -7px;
+
+}
+
+.login{
+    margin: 10px 0 0 0 ;
+}
+
+.login ul{
+    display:grid ;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    list-style-type: none;
+    margin-right: 5px ;
+    margin-top: 20px;
+}
+
+.login ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800 ;
+
+}
+
+.login ul li ul{
+    margin-top: 0px;
+}
+
+
+#container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+#room-info {
+    float: left;
+    margin: 0px 10px 0px 10px ;
+}
+
+#room-map{
+    float: left;
+}
+
+.short-impact {
+    font-size: 13px;
+}
+
+
+/* ///////////////////////////예약 부분//////////////////////////// */
+.reserv-title{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.reservation-part{
+    margin: 40px 0 0 15px;
+    
+}
+
+.reservation-part:after{
+    border-bottom: 14px solid black;
+    margin-bottom: 20px;
+}
+
+.reservation-part ul{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    
+}
+
+.reservation-part ul button{
+    background-color: white;
+    border-radius: 30px;
+    padding: 7px 15px 7px 15px;
+    margin: 0 20px 0 0px;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.reservation-part ul li{
+    display: inline-block;
+}
+
+.reserv-check{
+   color: grey;
+}
+
+.reserv-check:after{
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    margin:  35px 0px;
+}
+
+/* ////////////////////////////방 사진 슬라이드//////////////////////////////////////// */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  max-height: 200px;
+  position: relative;
+  margin: 0px 0px 50px 0px;
+ 
+  float: left;
+
+}
+
+.room-pic{
+    width: 300px;
+    height: 200px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 15px;
+  margin-top: -22px;
+  color: rgb(41, 41, 41);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(46, 46, 46, 0.8);
+}
+
+/* Caption text */
+
+
+
+/* The dots/bullets/indicators */
+
+.dot-home{
+    margin-left: 0px;
+    padding-top: 0px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 1px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 1px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* ///////////////////////////방 정보 ////////////////////////////////////////////////////// */
+
+.room-list{
+    padding: 1px 10px;
+    margin-bottom: 0px;
+   
+}
+
+.room-list:after{
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    margin:  35px 0px 30px 0px;
+}
+
+.room-part{
+    margin: 0 0 0 5px; 
+    display: inline-block;
+    position: relative;
+}
+.room-pic{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+
+.room-text{
+    margin-left: 320px;
+}
+
+.room-name:after{
+    content: "";
+    display: block;
+    width: 30px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    margin:  15px 0px 10px;
+}
+
+.room-subtitle{
+    font-size: 14px;
+    color: grey;
+}
+
+.click-heart{
+    float: right;
+    margin:  0 -5% 0 0;
+}
+
+.room-detail{
+    font-size: 15px;
+    color: grey;
+    margin-bottom: 60px;
+}
+
+.room-starpoint{
+    color: rgb(255, 56, 92);
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+
+
+.recently-part {
+    position: relative;
+}
+
+
+/* //////////////////////////하단 조회///////////////////////// */
+.recently-part{
+    margin-left:15px
+}
+
+.recently-title{
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* //////////////////////////////////푸터//////////////////////// */
+/* ////////////////푸터part1///////////////////////////// */
+footer{
+    position: relative;; 
+    left:0px; 
+    bottom:0px; 
+    height:66%; 
+    width:100%; 
+    background:rgb(241, 241, 241); 
+    color: rgb(0, 0, 0);
+    /* text-align: center; */ 
+}
+
+footer>div{ 
+   padding-top: -0px;
+}
+
+footer>div>div{
+    /* padding: 1% 0% 1% 0%; */
+    padding: 1% 5% 1% 5%;
+    /* position: fixed; */
+}
+
+.footer-sec{
+    margin-top: -30px;
+    display: inline-block;
+    padding: 30px 50px 10px 100px;
+}
+
+
+.footul{
+    padding-left:0px;
+    
+}
+
+.footli{
+    list-style:none;
+    padding-bottom: 15px;
+    
+}
+
+
+/* ////////////////푸터part2///////////////////////////// */
+.last-sec{
+    margin: 1% 5% 1% 5%;
+}
+
+
+
+
+
+
+
